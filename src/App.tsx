@@ -33,7 +33,7 @@ function App() {
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-      <Container style={{color:"white",backgroundColor:"#121212",height:"100vh"}}>
+      <Container maxWidth={false} style={{color:"white",backgroundColor:"#121212",height:"100vh"}}>
         <Grid container direction="column" alignItems="center" justify="center" spacing={0} style={{paddingTop:"20px"}}>
           <Grid item xs={3} >
             <Typography variant="h5" gutterBottom>
@@ -53,13 +53,16 @@ function App() {
         <Grid container direction="row" alignItems="center" justify="center" spacing={1} style={{paddingTop:"20px"}}>
           {[...Array(n)].map((e, i) => (
             <Grid item xs={2}>
-              <Paper elevation={1} style={{color:"white",backgroundColor:"#121212"}}>
-                <Typography>
+              <Paper elevation={1} style={{color:"white",backgroundColor:"#212121"}}>
+                <Typography gutterBottom>
                   dom 12
                 </Typography>
-                <Typography>
+                <Typography gutterBottom>
                   21
                 </Typography> 
+                <Typography gutterBottom>
+                  Muy soleado
+                </Typography>
               </Paper>
             </Grid>)
           )}
